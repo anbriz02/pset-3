@@ -6,7 +6,7 @@ const MAX = 0.99;
 const quarter = 0.25;
 const dime = 0.10;
 const nickel = 0.05;
-const penny = 0.01
+const penny = 0.01;
 
 const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
