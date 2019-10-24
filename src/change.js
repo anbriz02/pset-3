@@ -21,7 +21,7 @@ let afterDime = afterQuarter-(changed)*(dime);
 let changen = Math.floor(afterDime/nickel);
 let afterNickel = afterDime-(changen)*(nickel);
 
-let changep = Math.ceil(afterNickel/penny);
+let changep = Math.round(afterNickel/penny);
 
 
 if (Number.isNaN(amount)) {
