@@ -25,9 +25,9 @@ let changep = Math.ceil(afterNickel/penny);
 
 
 if (Number.isNaN(amount)) {
-    console.log("Invalid")
+    console.log("\nInvalid\n")
 } else if (amount < MIN || amount > MAX) {
-    console.log("Invalid")
+    console.log("\nInvalid\n")
 } else {
     console.log("\n" + changeq + " quarters" + ", " + changed + " dimes, " + changen + " nickels" + ", and " + changep + " pennies.\n")
 }
