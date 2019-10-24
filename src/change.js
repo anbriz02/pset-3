@@ -8,7 +8,7 @@ const dime = 0.10;
 const nickel = 0.05;
 const penny = 0.01
 
-let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
+const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 
 
