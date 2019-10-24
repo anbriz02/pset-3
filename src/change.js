@@ -10,15 +10,24 @@ const penny = 0.01
 
 let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
+
+
 let changeq = Math.floor(amount/quarter);
-let changed = amount/(changeq % dime);
-let changen = Math.floor(changed % nickel);
-let changep = Math.floor(changen % penny);
+let afterQuarter = amount-(changeq)*(quarter);
+
+let changed = Math.floor(afterQuarter/dime);
+let afterDime = afterQuarter-(changed)*(dime);
+
+let changen = Math.floor(afterDime/nickel);
+let afterNickel = afterDime-(changen)*(nickel);
+
+let changep = Math.ceil(afterNickel/penny);
+
 
 if (Number.isNaN(amount)) {
     console.log("Invalid")
 } else if (amount < MIN || amount > MAX) {
     console.log("Invalid")
 } else {
-    console.log(changeq + " quarters" + ", " + changed + ", " + "dimes" + changen + "nickels" + ", and" + changep + "pennies.")
+    console.log("\n" + changeq + " quarters" + ", " + changed + " dimes, " + changen + " nickels" + ", and " + changep + " pennies.\n")
 }
