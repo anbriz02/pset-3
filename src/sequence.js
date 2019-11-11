@@ -9,12 +9,22 @@ const MIN = Number.MIN_SAFE_INTEGER;
 
 if (Number.isNaN(amount)) {
     console.log("\nInvalid.\n")
-} else if (!Number.isInteger(amount)) {
-    console.log("\nInvalid.\n")
 } else if (amount < MIN || amount > MAX) {
     console.log("\nInvalid.\n")
-} else if (amount % 2 === 0) {
-    console.log("\nEven.\n");
+} else if (amount2 < MIN || amount2 > MAX) {
+    console.log("\nInvalid.\n")
+} else if (amount3 < MIN || amount3 > MAX) {
+    console.log("\nInvalid.\n")
+} else if ((amount < amount2) && (amount2 < amount3)) {
+    console.log("\nStrictly increasing.\n");
+} else if ((amount == amount2) && (amount2 == amount3)) {
+    console.log("\nEqual.\n");
+} else if ((!amount <= amount2) && (!amount2 <= amount3)){
+    console.log("\nIncreasing.\n");
+}  else if ((amount > amount2) && (amount2 > amount3)) {
+    console.log("\nStrictly decreasing.\n");
+} else if ((amount >= amount2) && (amount2 >= amount3)) {
+    console.log("\nDecreasing.\n");
 } else {
-    console.log("\nOdd.\n");
+    console.log("\nUnordered.\n")
 }
