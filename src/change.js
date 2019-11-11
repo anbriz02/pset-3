@@ -29,5 +29,5 @@ if (Number.isNaN(amount)) {
 } else if (amount < MIN || amount > MAX) {
     console.log("\nInvalid\n")
 } else {
-    console.log("\n" + changeq + " quarters" + ", " + changed + " dimes, " + changen + " nickels" + ", and " + changep + " pennies.")
+    console.log("\n" + changeq + " quarters" + ", " + changed + " dimes, " + changen + " nickels" + ", and " + changep + " pennies.\n")
 }

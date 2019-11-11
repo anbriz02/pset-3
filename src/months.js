@@ -3,7 +3,7 @@ const readlineSync = require("readline-sync");
 const month = String(readlineSync.question("\nEnter a month: "));
 
 if (month == "feb" || month == "Feb" || month == "February" || month == "february"){
-  console.log("\n28 or 29 days.")
+  console.log("\n28 or 29 days.\n")
 }else if (month == "Jan" || month == "jan" || month == "January" || month == "january") {
   console.log("\n31 days.")
 }else if (month == "Mar" || month == "mar" || month == "March" || month == "march") {

@@ -22,7 +22,7 @@ let diamonds = " of Diamonds."
 let clubs = " of Clubs."
 
 if (card == "AS" || card == "as"){
-    console.log(ace.concat(spades) + "")
+    console.log(ace.concat(spades) + "\n")
 } else if (card == "AH" || card == "ah"){
     console.log(ace.concat(hearts) + "")
 } else if (card == "AD" || card == "ad"){
